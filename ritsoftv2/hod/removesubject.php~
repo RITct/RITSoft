@@ -1,0 +1,17 @@
+
+<?php
+	include("includes/connection1.php");
+	$subjectid=$_GET['subjectid'];		 
+	$sql ="delete from subject_class where subjectid='$subjectid';";
+	if (mysql_query($sql)==TRUE)  {
+		echo '<script type="text/javascript"> alert("Deleted Successfully");
+        location.replace("subject_view.php");
+        </script> ';  
+	}
+				  
+	else {	
+		echo '<script type="text/javascript"> alert("Deletion failed");
+        location.replace("subject_view.php");
+        </script>'; 
+	}
+?>

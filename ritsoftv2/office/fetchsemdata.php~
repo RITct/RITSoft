@@ -1,0 +1,91 @@
+<!-- table creation -->
+<div class="table-responsive">
+    <table   class="table table-hover table-bordered" >
+     <tr>
+        <th style="text-align: center;">ADMISSION NUMBER</th>
+        <th style="text-align: center;">NAME</th>
+        <th style="text-align: center;">CURRENT SEM</th>
+        <th style="text-align: center;">NEXT SEM</th>
+        <th style="text-align: center;">APPLICATION STATUS</th>
+        <th style="text-align: center;">REMARK</th>
+	 </tr>
+
+
+    <?php
+    session_start();
+//link for connection.php
+    include("includes/connection.php");
+    if(isset($_POST["key"]))
+    {
+		$classid=$_POST["key"];
+	//echo $classid;
+//reading registration details from stud_sem_registration 
+        $resul=mysql_query("select reg_id,adm_no,classid,apl_status,previous_sem,new_sem,apv_status,remarks from stud_sem_registration,current_class where classid='$classid' and current_class.studid=stud_sem_registration.adm_no and apv_status='Approved by HOD' order by current_class.rollno ");
+        while($dat=mysql_fetch_array($resul))
+        {
+            $adm_no=$dat["adm_no"];
+            $previous_sem=$dat["previous_sem"];
+            $new_sem=$dat["new_sem"];
+            $apv_status=$dat["apv_status"];
+            $apl_status=$dat["apl_status"];
+            $reg_id=$dat["reg_id"];
+            $remarks=$dat["remarks"];
+//fetching data from stud_details
+			$result1=mysql_query("select * from stud_details where admissionno='$adm_no'");   
+			while($dat=mysql_fetch_array($result1))
+            {
+                $name=$dat["name"];
+            }
+//check student semester registration applied status
+            if($apl_status=='Applied' || $apv_status!='Rejected by office' )
+            {
+    ?>
+                <tr align="center">
+				<td align="center"><?php  echo $adm_no;?></td>
+                <td align="center"><?php  echo $name;?></td>
+                <td align="center"><?php  echo $previous_sem;?></td>
+                <td align="center"><?php  echo $new_sem; ?></td>
+                <?php
+//check student semester registration approval status 
+                if($apv_status!="Approved by office")
+                { 
+				?>
+                <td><?php echo $apv_status;?>
+                <br><div class="btn-group">
+                <a href="semregedit.php?id=<?php echo $reg_id;?>&id2=1&id3=<?php echo $classid ?>"><font color="green">Verify</font></a> | 
+                <a href="#" onclick="setid(<?php echo $reg_id;?>,'<?php echo $classid ?>')"  
+                                    data-toggle="modal" data-target="#myModal"
+                                    ><font color="red">Reject</font></a>
+
+
+                 </div></td>
+                <?php
+                }
+                else
+                {
+                ?>
+                              <td>
+                               <div class="btn-group">
+                                <a href="semregedit.php?id=<?php echo $reg_id;?>&id2=1&id3=<?php echo $classid ?>"><font color="green">Verify</font></a> | 
+                                <a href="#" onclick="setid(<?php echo $reg_id;?>,'<?php echo $classid ?>')"  
+                                    data-toggle="modal" data-target="#myModal"
+                                    ><font color="red">Reject</font></a>
+
+
+                                </div>
+                        </td>
+                <?php
+                }
+				?>
+								<td align="center"><?php  echo $remarks; ?></td>
+
+
+								</tr>
+                   
+                <?PHP
+                }
+            }
+        }
+        ?>
+    </table> 
+</div>

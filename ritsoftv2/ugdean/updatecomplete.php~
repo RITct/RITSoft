@@ -1,0 +1,17 @@
+<?php 
+	include("includes/connection.php");
+?>
+<?php
+if (isset($_POST["curr_sem"]) && isset($_POST["next_sem"]) && isset($_POST["status"])) {
+	$curr_sem=$_POST["curr_sem"];
+	$next_sem=$_POST["next_sem"];
+	$status=$_POST["status"];
+	mysql_query("update semregstatus set status='$status' where curr_sem='$curr_sem' and next_sem='$next_sem'") or die(mysql_error());
+	mysql_query("update class_details set active='NO' where classid='$curr_sem'") or die(mysql_error());
+	mysql_query("update class_details set active='YES' where classid='$next_sem'") or die(mysql_error());
+	if($status==1)
+	echo "Semester registration started";
+	else
+	echo "semester registration completed";
+}
+?>
