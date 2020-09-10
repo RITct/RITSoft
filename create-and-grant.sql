@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS ritsoftv2;
+GRANT ALL PRIVILEGES ON ritsoftv2.* TO 'ritsoftv2'@'localhost' IDENTIFIED BY 'ritsoftv2';
+FLUSH PRIVILEGES;
+
