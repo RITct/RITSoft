@@ -62,6 +62,6 @@ hodme@somedomain.com	hodmepasswd
 officeuser	officeuserpasswd
 
 Students have the format
-19BC12345	19BC12345passwd
+14BA10225	14BA10225passwd
 
 Happy Coding...!!
