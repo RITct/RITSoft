@@ -50,6 +50,7 @@ You can see 'login' table to find the details of all users. Here are some guidel
 4. All users, except HoDs have username followed by "passwd" as their password
 5. The username and passwords of all non student users are given here.
 
+administrator	administratorpasswd
 admissionuser	admissionuserpasswd
 hodarch@somedomain.com	hodarchpasswd
 hodce@somedomain.com	hodcepasswd
@@ -62,6 +63,6 @@ hodme@somedomain.com	hodmepasswd
 officeuser	officeuserpasswd
 
 Students have the format
-14BA10225	14BA10225passwd
+15BA10451	15BA10451passwd
 
 Happy Coding...!!
