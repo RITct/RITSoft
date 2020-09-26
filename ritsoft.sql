@@ -6492,7 +6492,10 @@ INSERT INTO `faculty_designation` (`fid`, `designation`) VALUES
 ('DUMMY4',	'hod'),
 ('DUMMY5',	'hod'),
 ('DUMMY1',	'hod'),
-('DUMMY6',	'hod');
+('DUMMY6',	'hod'),
+('12345',	'faculty'),
+('12345',	'staff advisor'),
+('1235',	'faculty');
 
 DROP TABLE IF EXISTS `faculty_details`;
 CREATE TABLE `faculty_details` (
@@ -6507,6 +6510,8 @@ CREATE TABLE `faculty_details` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `faculty_details` (`fid`, `name`, `deptname`, `phoneno`, `email`, `photo`) VALUES
+('12345',	'FACULTY A',	'COMPUTER APPLICATIONS',	'9446123456',	'faculty1@somedomain.com',	''),
+('1235',	'FACULTY B',	'APPLIED SCIENCE',	'9446123457',	'faculty2@somedomain.com',	''),
 ('DUMMY1',	'HODMCA',	'COMPUTER APPLICATIONS',	'',	'hodmca@somedomain.com',	''),
 ('DUMMY2',	'HODCE',	'CIVIL',	'',	'hodce@somedomain.com',	''),
 ('DUMMY3',	'HODME',	'MECHANICAL',	'',	'hodme@somedomain.com',	''),
@@ -8812,6 +8817,8 @@ INSERT INTO `login` (`username`, `password`, `usertype`) VALUES
 ('20BM13043',	'20BM13043passwd',	'student'),
 ('administrator',	'administratorpasswd',	'admin'),
 ('admissionuser',	'admissionuserpasswd',	'admission'),
+('faculty1@somedomain.com',	'faculty1passwd',	'faculty'),
+('faculty2@somedomain.com',	'faculty2passwd',	'faculty'),
 ('hodarch@somedomain.com',	'hodarchpasswd',	'faculty'),
 ('hodce@somedomain.com',	'hodcepasswd',	'faculty'),
 ('hodcse@somedomain.com',	'hodcsepasswd',	'faculty'),
@@ -9472,6 +9479,8 @@ CREATE TABLE `staff_advisor` (
   CONSTRAINT `staff_advisor_ibfk_1` FOREIGN KEY (`fid`) REFERENCES `faculty_details` (`fid`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO `staff_advisor` (`classid`, `fid`, `students_list`) VALUES
+('PG27',	'12345',	'1-41');
 
 DROP TABLE IF EXISTS `stud_details`;
 CREATE TABLE `stud_details` (
@@ -12447,6 +12456,9 @@ CREATE TABLE `subject_allocation` (
   CONSTRAINT `subject_allocation_ibfk_3` FOREIGN KEY (`subjectid`, `classid`) REFERENCES `subject_class` (`subjectid`, `classid`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO `subject_allocation` (`classid`, `subjectid`, `fid`, `type`) VALUES
+('PG27',	'RLMCA205',	'12345',	'main'),
+('UG19',	'CS201',	'1235',	'main');
 
 DROP TABLE IF EXISTS `subject_allocationold`;
 CREATE TABLE `subject_allocationold` (
@@ -14187,4 +14199,4 @@ CREATE TABLE `university_mark` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
--- 2020-09-16 14:59:13
+-- 2020-09-26 06:08:53

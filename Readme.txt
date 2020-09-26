@@ -46,9 +46,10 @@ RITSoft Login Details
 You can see 'login' table to find the details of all users. Here are some guidelines to use the table.
 1. All students have Admission number as username
 2. All HoDs have "hod" followed by dept. name followed by "@somedomain.com"
-3. administrator, admissionuser and officeuser are the other users
-4. All users, except HoDs have username followed by "passwd" as their password
-5. The username and passwords of all non student users are given here.
+3. We have two sample faculty, one from MCA department and the other from Applied Science.
+4. administrator, admissionuser and officeuser are the other users
+5. All users, except HoDs and faculty have username followed by "passwd" as their password
+6. The username and passwords of all non student users are given here.
 
 administrator	administratorpasswd
 admissionuser	admissionuserpasswd
@@ -61,8 +62,16 @@ hodmathematics@somedomain.com	hodmathematicspasswd
 hodmca@somedomain.com	hodmcapasswd
 hodme@somedomain.com	hodmepasswd
 officeuser	officeuserpasswd
+faculty1@somedomain.com	   faculty1passwd
+faculty2@somedomain.com	   faculty2passwd
 
 Students have the format
 15BA10451	15BA10451passwd
+
+We have added a quite primitive User Guide here,
+ 
+https://docs.google.com/document/d/1IxwGnyp3-Usa7A1bgY1PJqLkj46pQ63hXa-4JT0jkXI/edit?usp=sharing
+
+please share the mistakes/vagueness you find in the whatsapp group..
 
 Happy Coding...!!
