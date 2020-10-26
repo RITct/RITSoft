@@ -1,5 +1,5 @@
 <?php
-include("includes/connection1.php");
+include("../connection.mysqli.php");
 $course=$_REQUEST["course"];
 $department=$_REQUEST["department"];
 $specialization=$_REQUEST["specialization"];

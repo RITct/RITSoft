@@ -3,7 +3,7 @@
 include("includes/header.php");
 
 include("includes/sidenav.php");
-include "includes/connection.php";
+include "../connection.php";
 $id=$_GET['sid'];
 $sql=mysql_query("SELECT * from scholarship_type where id=$id");
 $r=mysql_fetch_assoc($sql);

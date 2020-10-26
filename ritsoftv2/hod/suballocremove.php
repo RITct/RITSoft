@@ -1,6 +1,6 @@
 
 <?php
-include("includes/connection1.php");
+include("../connection.php");
 $staffid=$_GET['staffid'];
 $classid=$_GET['classid'];
 $subjectid=$_GET['subid'];	

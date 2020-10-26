@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-include("includes/connection3.php");
+include("../connection.mysqli.php");
 if(!isset($_SESSION['fid']))
 {
   die("Error : Not Logged in");
@@ -21,6 +21,8 @@ ExportReports('excel');
 function ExportReports($parameter1)
 {
     global $con3;
+    global $con;
+    $con3 = $con;
     global $classid;
     global $sub;
     global $sdate;

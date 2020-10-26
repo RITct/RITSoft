@@ -1,6 +1,6 @@
 <?php //$con3=mysqli_connect("localhost","root","","ritsoft");
 
-include("includes/connection.php");
+include("../connection.php");
 $st=$_SESSION['fid'];
 
 $sum="";

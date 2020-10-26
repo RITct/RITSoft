@@ -1,7 +1,7 @@
 <?php
 session_start();
 $hodid=$_SESSION['fid']; 
-include("includes/connection.php");
+include("../../connection.mysqli.php");
 
 //$link = mysqli_connect("localhost", "root", "", "ritsoft");
 if($con === false){

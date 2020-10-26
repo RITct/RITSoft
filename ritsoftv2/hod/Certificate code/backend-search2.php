@@ -2,7 +2,7 @@
 session_start();
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-include("includes/connection.php");
+include("../../connection.mysqli.php");
 //$link = mysqli_connect("127.0.0.1","ritsoftv2","ritsoftv2", "ritsoftv2");
 
 //..............................................................................

@@ -1,8 +1,8 @@
 <?php
 session_start();
-include("includes/connection3.php");
+include("../connection.mysqli.php");
 //$con=mysqli_connect("localhost","root","","ritsoft");
-//include("includes/connection.php");
+//include("../connection.php");
 $st=$_SESSION['fid'];
 $html='';
 $dept=$_GET['dept'];

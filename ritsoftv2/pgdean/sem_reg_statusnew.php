@@ -7,7 +7,7 @@
  */
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection1.php");
+include("../connection.mysqli.php");
 $fid=$_SESSION['fid'];
 ?>
 

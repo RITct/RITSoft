@@ -4,7 +4,4 @@ connection.php
 db.php
 details.php
 excelstud.php
-includes/connection1.php
-includes/connection3.php
-includes/connection.php
 pplfacultydetails.php

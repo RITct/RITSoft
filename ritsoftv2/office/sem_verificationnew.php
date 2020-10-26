@@ -12,7 +12,7 @@
 // This is used for header, sidenavigation, connection links 
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 
 if(isset($_POST["classid"]))  
 	$classid=$_POST["classid"]; 

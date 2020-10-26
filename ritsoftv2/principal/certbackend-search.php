@@ -1,5 +1,5 @@
 <?php
-include("includes/connection1.php");
+include("../connection.mysqli.php");
 //$link = mysqli_connect("localhost", "root", "", "ritsoft");
 if($con === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());

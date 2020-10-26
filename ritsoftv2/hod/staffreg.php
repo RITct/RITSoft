@@ -1,7 +1,7 @@
 <?php
 	include("includes/header.php");
 	include("includes/sidenav.php");
-	include("includes/connection1.php");
+	include("../connection.php");
 $sql=mysql_query("select * from department where hod='$hodid'",$con);
 if($sql)
 {

@@ -1,6 +1,6 @@
 <?php
 include("includes/header.php");
-include("includes/connection1.php");
+include("../connection.mysqli.php");
 include("includes/sidenav.php");
 //$con=mysqli_connect("localhost","root","","ritsoft");
 //session_star

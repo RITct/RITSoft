@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include("includes/connection1.php");
+include("../connection.php");
  ?>
  <style>
 	.switch {

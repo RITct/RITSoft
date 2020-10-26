@@ -17,7 +17,7 @@ $course="";
 $batch="";
 $sem="";
 $year="";
-include('includes/connection1.php');
+include('../../connection.php');
 ?>
 
 

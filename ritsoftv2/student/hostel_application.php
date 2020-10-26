@@ -4,7 +4,7 @@ $msg='';
 $c=0;
 //session_start();
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 $_SESSION['uname']=$_SESSION['admissionno'];
 
 if (!isset($_SESSION['uname'])) 

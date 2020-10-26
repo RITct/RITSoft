@@ -1,6 +1,6 @@
 <?php
 //$con=mysqli_connect("localhost","root","","ritsoft2");
-include("connection.php");
+include("../connection.php");
 //session_start();
 //$uname=$_SESSION['fid'];
 
@@ -268,7 +268,7 @@ if (isset($_POST['update_sessionala4'])) {
 								</table>
 							</form>
 							<?php 
-							include("connection.php");
+							include("../connection.php");
 							?>
 							<table  style="width: 100%;">
 								<tbody>

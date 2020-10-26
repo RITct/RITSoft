@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("includes/connection1.php");
+include("../connection.php");
 function random_password( $length = 8 ) 
 {
 	$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@";

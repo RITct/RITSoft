@@ -1,6 +1,6 @@
 <?php
 session_start();
-  include("includes/connection.php");
+  include("../connection.php");
   if(isset($_POST['submit2']))
   {
 	//include('select.php');
@@ -191,7 +191,7 @@ session_start();
   			$slname='ECE';
   	}
  //code for fetching serial number from database
-  	include('includes/connection1.php');
+  	include('../connection.mysqli.php');
   	$sl_no='';
   	
 //$d_id="";

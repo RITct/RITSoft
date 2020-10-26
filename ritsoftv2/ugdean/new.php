@@ -13,7 +13,7 @@ $course="";
 $batch="";
 $sem="";
  //$year="";
-include('includes/connection.php');
+include('../connection.php');
 ?>
 <!--<script type="text/javascript">
 //function Checkcolor(val)

@@ -1,5 +1,5 @@
 <?php
-include ('connection.php');
+include ('../connection.php');
 include('check.php');
 
 function encryptData($value){

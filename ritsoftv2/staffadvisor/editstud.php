@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
  $adm_no=$_GET['sid'];
 
 $result=mysql_query("select name,email,mobile_phno from stud_details where admissionno='$adm_no'");

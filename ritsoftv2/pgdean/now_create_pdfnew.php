@@ -6,7 +6,7 @@
  * @Last Modified by:   indran
  * @Last Modified time: 2018-09-09 11:34:32
  */ 
-include("includes/connection.php");
+include("../connection.php");
 ?>
 
 

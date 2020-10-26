@@ -16,7 +16,7 @@
                        <li>
                         <a href="../dash_home.php"><i class="fa fa-user fa-fw"></i>
                             <?php
-                            include("connection1.php");
+                            include("../../../connection.php");
                             $r=mysql_query("select name from faculty_details where fid='$hodid'");
                             while($d=mysql_fetch_array($r))
                             {

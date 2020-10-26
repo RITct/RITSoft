@@ -1,5 +1,5 @@
 <?php
-include("includes/connection.php");
+include("../connection.php");
 $adm_id = $_GET['id']; 
 $sub_id=$_GET['sid'];
 

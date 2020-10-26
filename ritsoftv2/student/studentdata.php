@@ -2,7 +2,7 @@
 //session_start();
 function getstuddata()
 {
-include("includes/connection.php");
+include("../connection.php");
 $admissionno=$_SESSION["admissionno"];
 $result=mysql_query("select s.*,l.* from stud_details s,login l where s.admissionno = '$admissionno' and s.admissionno=l.username and l.usertype='student'");
 

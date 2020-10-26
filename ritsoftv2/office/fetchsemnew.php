@@ -13,7 +13,7 @@
   }
 </script>
  <?php
-include("includes/connection.php");
+include("../connection.php");
 if (isset($_POST["key"])) {
 	if ($_POST["key"]!="") {
 		$branch=$_POST["key"];

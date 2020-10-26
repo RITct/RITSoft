@@ -1,7 +1,7 @@
 <?php
 //$con=mysqli_connect("localhost","root","","ritsoft");
 include("includes/header.php");
-include("includes/connection3.php");
+include("../connection.mysqli.php");
 include("includes/sidenav.php");
 //session_start();
 $uname=$_SESSION['fid'];

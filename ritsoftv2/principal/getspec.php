@@ -1,6 +1,6 @@
 
 <?php
-include("includes/connection1.php");
+include("../connection.mysqli.php");
 
 
 $course=$_REQUEST["course"];

@@ -2,7 +2,7 @@
 //session_start();
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 $stid=$_SESSION['admissionno'];
 
 //select login student name

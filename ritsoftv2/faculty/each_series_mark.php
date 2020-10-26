@@ -6,7 +6,7 @@
  * @Last Modified by:   indran
  * @Last Modified time: 2018-10-19 11:53:31
  */ 
-include("connection.php");
+include("../connection.php");
 include("includes/header.php");
 include("includes/sidenav.php");
 $uname=$_SESSION['fid'];

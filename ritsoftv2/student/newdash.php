@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 
 if(isset($_POST["bugsubmit"]))
 {
@@ -12,7 +12,7 @@ $body = "Hi,\n\nHow are you?";
 if (mail($to, $subject, $body)) {
 echo("<p>Email successfully sent!</p>");
 } else {
-echo("<p>Email delivery failed…</p>");
+echo("<p>Email delivery failedï¿½</p>");
 }
 
 }

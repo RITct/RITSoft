@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 $admissionno=$_SESSION['adm'];
 
 			$query="select distinct(name),admissionno,courseid from stud_details join current_class where admissionno='$admissionno'";	

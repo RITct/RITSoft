@@ -21,7 +21,7 @@ ELECTIVE
 </script>
 <form name="form1" method="post" action="elective_action.php" id="doSubmitAtt">
   <?php
-  include("includes/connection3.php");
+  include("../connection.mysqli.php");
 //$con=mysqli_connect("localhost","root","","ritsoft");
   if(isset($_POST['btnshow']))
   {

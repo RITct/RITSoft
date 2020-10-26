@@ -1,6 +1,6 @@
 <?php
 include("includes/header.php");
-include('includes/connection1.php');
+include('../../connection.php');
 include("includes/sidenav.php");
 //include("includes/sidenav.php");
  $course=$_SESSION['courseid'];

@@ -2,7 +2,7 @@
 <?php
  //session_start();
 
-include("includes/connection.php");
+include("connection.php");
 include("includes/header.php");
 $f=$_SESSION['fid'];
 $utype=$_SESSION['utype'];

@@ -2,7 +2,7 @@
 if(isset($_GET['sid']))
 {
 
-include "includes/connection.php";
+include "../connection.php";
 $id=$_GET["sid"];
 $sql=mysql_query("select * from scholarship where id=$id");
 $r=mysql_fetch_assoc($sql); 

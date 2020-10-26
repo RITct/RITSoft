@@ -6,7 +6,7 @@ session_start();
  * @Last Modified by:   indran
  * @Last Modified time: 2018-10-31 17:40:38
  */
-include("includes/connection1.php"); 
+include("../connection.mysqli.php");
 //$con=mysqli_connect("localhost","root","","ritsoft");
 $id=0;
 $res=mysqli_query($con,"select * from class_details where courseid='".$_REQUEST['course']."' and deptname='".$_REQUEST['dept']."' and branch_or_specialisation='".$_REQUEST['spec']."'  ");

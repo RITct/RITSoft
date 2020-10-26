@@ -18,7 +18,7 @@ if (isset($_GET["id3"])) {
 	}
 </script>
 <?php
-include_once("includes/connection1.php");
+include_once("../connection.php");
 
 
 

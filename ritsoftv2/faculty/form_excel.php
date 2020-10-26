@@ -96,7 +96,7 @@ if (! isset($_FILES['selected_excel'])) {
 
 }
 
-include("connection.php");
+include("../connection.php");
 
 $isSet = false;
 

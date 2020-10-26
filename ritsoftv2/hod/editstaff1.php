@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <?php
-include("includes/connection1.php");
+include("../connection.php");
 if (isset($_POST['submit'])) {	
 	$staffid=$_SESSION['fidd'];
 	$name=strtoupper($_POST['name']);

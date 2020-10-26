@@ -1,6 +1,6 @@
  <?php
  //session_start();
- include("includes/connection3.php");
+ include("../connection.mysqli.php");
 // $con=mysqli_connect("localhost","root","","ritsoft");
 $uname=$_SESSION['fid'];
 	if(isset($_POST["submit"]))

@@ -30,7 +30,7 @@ LAB
 <form name="form1" method="post" action="lab_action_update.php" id="doSubmitAtt">
   <?php
 //$con=mysqli_connect("localhost","root","","ritsoft");
-  include("includes/connection3.php");
+  include("../connection.mysqli.php");
   if(isset($_POST['btnshow']))
   {
 

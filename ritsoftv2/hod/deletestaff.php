@@ -1,5 +1,5 @@
 <?php
-	include("includes/connection1.php");
+	include("../connection.php");
 	$staffid=$_GET['staffid'];	
 	$l="select email from faculty_details where fid='$staffid';";
 	$result=mysql_query($l);

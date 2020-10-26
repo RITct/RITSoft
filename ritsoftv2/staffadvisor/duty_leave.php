@@ -274,7 +274,7 @@ $(document).on('click', '.okaySongleSubmit', function(event) {
 			isset($_POST['okay_ind']) 
 		) {
 
-			include("includes/connection3.php");
+			include("../connection.mysqli.php");
 
 
 			$admissionno = $_POST['admissionno'];
@@ -286,7 +286,7 @@ $(document).on('click', '.okaySongleSubmit', function(event) {
 			if(isset($_POST['remark']))
 				$remark = $_POST['remark'];
 
-			include("includes/connection.php");
+			include("../connection.php");
 
 			$x=true;
 			$re4=mysqli_query($con3," SELECT * FROM  duty_leave  WHERE  studid = '$admissionno' AND	subjectid = '$subject' AND	leave_date = '$date' AND 	hour = '$hour' ");
@@ -338,7 +338,7 @@ $(document).on('click', '.okaySongleSubmit', function(event) {
 			isset($_POST['okay_ind_reove']) 
 		) {
 
-			include("includes/connection3.php");
+			include("../connection.mysqli.php");
 
 
 			$admissionno = $_POST['admissionno'];
@@ -348,7 +348,7 @@ $(document).on('click', '.okaySongleSubmit', function(event) {
 			$okay_ind_reove = $_POST['okay_ind_reove'];
 
 
-			include("includes/connection.php");
+			include("../connection.php");
 
 			$x=true;
 			$re4=mysqli_query($con3," SELECT * FROM  duty_leave  WHERE  studid = '$admissionno' AND	subjectid = '$subject' AND	leave_date = '$date' AND 	hour = '$hour' ");

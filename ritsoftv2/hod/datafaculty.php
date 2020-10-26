@@ -1,5 +1,5 @@
 	<?php
-  include("includes/connection1.php");
+  include("../connection.php");
   include("includes/header.php");
   include("includes/sidenav.php");
   ?> 

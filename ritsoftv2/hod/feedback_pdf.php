@@ -9,7 +9,7 @@ $classid1=$_GET['classid1'];
 
 require('pdf/pdfSample.php');
 
-include("includes/connection1.php");
+include("../connection.php");
 $l1=mysql_query("select * from class_details where classid='$classid1'") or die(mysql_error());
 			$r1=mysql_fetch_assoc($l1);
 			$deptname1=$r1["deptname"];
