@@ -1,8 +1,8 @@
 <?php
 session_start();
 ob_start();
-error_reporting(0);
-
+error_reporting(getenv("DEBUG_APP") ? E_ALL : 0);
+ini_set('display_errors', getenv("DEBUG_APP") ? '1' : '0');
 ?>
 <!DOCTYPE html>
 <html lang="en">

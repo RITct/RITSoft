@@ -12,6 +12,7 @@ services:
       - MYSQL_USER=ritsoftv2
       - MYSQL_PASSWORD=ritsoftv2
       - MYSQL_DB=ritsoftv2
+#      - DEBUG_APP=true # Uncomment to enable error reporting
     networks:
       - default
   database:
