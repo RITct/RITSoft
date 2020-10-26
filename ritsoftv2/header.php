@@ -1,8 +1,8 @@
 <?php
 session_start();
 ob_start();
-error_reporting(0);
-
+error_reporting(getenv("MYSQL_USER") ? E_ALL : 0);
+ini_set('display_errors', getenv("MYSQL_USER") ? '1' : '0');
 ?>
 <!DOCTYPE html>
 <html lang="en">
