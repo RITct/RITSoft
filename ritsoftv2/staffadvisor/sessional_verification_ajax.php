@@ -6,7 +6,7 @@
  * @Last Modified time: 2018-11-15 10:44:49
  */
 session_start();
-include("includes/connection.php");
+include("../connection.php");
 
 $classid=$_SESSION["classid"];
 

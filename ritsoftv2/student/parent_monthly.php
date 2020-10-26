@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 
 
 $query=mysql_query("select distinct(name),admissionno,courseid from stud_details join current_class where admissionno='$admissionno'");
@@ -109,7 +109,7 @@ $query=mysql_query("select distinct(name),admissionno,courseid from stud_details
 	//$class=explode(",",$_POST['class']);
 						$date1=$_POST["date1"];//for from date
 						$date2=$_POST["date2"];//for to date
-						include('includes/connection.php');
+						include('../connection.php');
 
 						$query=" SELECT a.* ,  s.* , date_format(a.date, '%d, %b %Y %a') AS daten FROM attendance a LEFT JOIN subject_class s ON a.subjectid = s.subjectid WHERE a.studid = '$admissionno' AND a.date BETWEEN '$date1' AND '$date2'  ORDER BY a.date DESC ";
 
@@ -338,7 +338,7 @@ $query=mysql_query("select distinct(name),admissionno,courseid from stud_details
 	//$class=explode(",",$_POST['class']);
 						$date1=$_POST["date1"];//for from date
 						$date2=$_POST["date2"];//for to date
-						include('includes/connection.php');
+						include('../connection.php');
 			//............Query for find hourly wise attendance of each subject................
 						$query="SELECT sub1, pr, wo, subject_title FROM (SELECT subjectid AS sub1, subject_title, count( HOUR ) AS pr FROM attendance NATURAL JOIN subject_class WHERE STATUS = 'P' AND studid = '$admissionno' AND date BETWEEN '$date1' AND '$date2' GROUP BY subjectid)e, (SELECT subjectid AS sub2, count( HOUR ) AS wo FROM attendance WHERE studid = '$admissionno' AND date BETWEEN '$date1' AND '$date2' GROUP BY subjectid)d WHERE sub1 = sub2";
 

@@ -1,5 +1,5 @@
 <?php
-include("includes/connection.php");
+include("../connection.php");
 $subjectid = "";
 
 if (isset($_POST['bulk_studnets'])) {

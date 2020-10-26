@@ -6,7 +6,7 @@
      <th style="text-align: center;">ADMISSION NUMBER</th>
      <th style="text-align: center;">NAME</th>
      <?php
-     include("includes/connection1.php");
+     include("../connection.php");
      $verSta = "waiting";
      $sessional_status = $verSta;
      if(isset($_POST["key"])){

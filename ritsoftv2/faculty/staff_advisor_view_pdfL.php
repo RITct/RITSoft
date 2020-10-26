@@ -1,6 +1,6 @@
 
 <?php
-include("includes/connection3.php");
+include("../connection.mysqli.php");
 //$con=mysqli_connect("localhost","root","","ritsoft");
 require_once("dompdf/autoload.inc.php");
 use Dompdf\Dompdf;

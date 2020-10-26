@@ -1,5 +1,5 @@
 <?php
-include("includes/connection1.php");
+include("../connection.mysqli.php");
 $course=$_REQUEST["course"];
 ?>
 <select name="dept" onChange="getspecialization('<?php echo $course; ?>',this.value)" class="form-control">

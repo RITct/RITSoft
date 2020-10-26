@@ -1,6 +1,6 @@
 <?php
 include("header1.php");
-include("pgdean/includes/connection.php");
+include("connection.php");
 ?>
 <div class="now-on-top">
 	<div class="row">

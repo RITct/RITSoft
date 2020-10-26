@@ -1,5 +1,5 @@
 <?php
-include("includes/connection.php");
+include("../connection.php");
 $id = $_GET['id']; 
 $id2 = $_GET['id2']; 
 $parent="parent";

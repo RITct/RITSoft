@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 $classid=$_SESSION['classid'];
 //.......select department of login hod
 $sql=mysql_query("select * from class_details where classid='$classid'");

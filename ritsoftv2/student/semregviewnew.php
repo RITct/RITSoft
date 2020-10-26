@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 $admissionno=$_SESSION["admissionno"];
 
 $l=mysql_query("select * from stud_sem_registration where adm_no='$admissionno'") or die(mysql_error());

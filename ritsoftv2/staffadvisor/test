@@ -5,9 +5,8 @@ backend-search.php~
 details.php
 excel.php
 excel_studclass.php
-includes/connection1.php
-includes/connection3.php
-includes/connection.php
+../connection.mysqli.php
+../connection.php
 pplfacultydetails.php
 stud_backend2.php
 stud_backend.php

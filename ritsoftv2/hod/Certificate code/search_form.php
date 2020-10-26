@@ -2,7 +2,7 @@
 include("includes/header.php");
 
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../../connection.mysqli.php");
 ?>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">

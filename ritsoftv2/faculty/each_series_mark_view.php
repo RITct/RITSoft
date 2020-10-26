@@ -10,7 +10,7 @@
 
 ?><?php
 //$con=mysqli_connect("localhost","root","","ritsoft2");
-include("connection.php");
+include("../connection.php");
 //session_start();
 //$uname=$_SESSION['fid'];
 
@@ -224,7 +224,7 @@ if (isset($_POST['updateme'])) {
 
 								<?php
 //$con=mysql_connect("localhost","root","","ritsoft2");
-								include("connection.php");
+								include("../connection.php");
 								if(isset($_POST['btnshow']) && isset($_POST['class']) && isset($_POST['sub']))
 								{
 									?>

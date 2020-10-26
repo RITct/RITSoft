@@ -1,5 +1,5 @@
 <?php 
-	include("includes/connection.php");
+	include("../connection.php");
 ?>
 <?php
 if (isset($_POST["curr_sem"]) && isset($_POST["next_sem"]) && isset($_POST["status"])) {

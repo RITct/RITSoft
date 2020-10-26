@@ -1,6 +1,6 @@
 
 <?php
-	include("includes/connection1.php");
+	include("../connection.php");
 	$subjectid=$_GET['subjectid'];	
 	$classid=$_GET['classid'];	 
 	$sql ="delete from subject_class where subjectid='$subjectid' and classid='$classid';";

@@ -59,10 +59,10 @@ text-align:center;
 <?php
 //session_start();
 //$con=mysqli_connect("localhost","root","","ritsoft5");
-include("includes/connection1.php");
+include("../connection.mysqli.php");
 include("includes/header.php");
 include("includes/sidenav.php");
-//include('includes/connection.php');
+//include('../connection.php');
 error_reporting(0);
 
 $datea="";	

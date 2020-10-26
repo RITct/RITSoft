@@ -1,6 +1,6 @@
 <?php
 include("includes/header.php");
-include("connection.php");
+include("../connection.php");
 
 include("includes/sidenav.php");
 $uname=$_SESSION['fid'];

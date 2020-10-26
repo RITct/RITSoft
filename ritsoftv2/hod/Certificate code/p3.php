@@ -99,7 +99,7 @@ echo 'hi';
 
 
 
-  	include('includes/connection1.php');
+  	include('../../connection.php');
   	
   	$rcpt_no=$_POST['no'];	
   	

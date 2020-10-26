@@ -1,6 +1,6 @@
  
 <?php
-include('includes/connection.php');
+include('../connection.php');
 if (isset($_POST["key"])) {
 	if ($_POST["key"]!="") {
 		$classid=$_POST["key"];

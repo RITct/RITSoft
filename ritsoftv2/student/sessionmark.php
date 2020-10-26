@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
             //..............Query for fetch name,admissionno and courseid of student..............
 $query="select distinct(name),admissionno,courseid from stud_details join current_class where admissionno='$admissionno'";	
 

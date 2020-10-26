@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("includes/connection1.php"); 
+include("../connection.mysqli.php");
 //$con=mysqli_connect("localhost","root","","ritsoft");
 $username=$_SESSION['fid'];
 $idd=explode(",",$_REQUEST['id']);

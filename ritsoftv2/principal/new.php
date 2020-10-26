@@ -20,7 +20,7 @@ else
   $batch="";
  $sem="";
  //$year="";
-  include('includes/connection1.php');
+  include('../connection.mysqli.php');
 ?>
 <!--<script type="text/javascript">
 //function Checkcolor(val)

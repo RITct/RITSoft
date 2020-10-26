@@ -1,7 +1,7 @@
   <?php
   include("includes/header.php");
   include("includes/sidenav.php");
-  include("includes/connection.php");
+  include("../connection.php");
   $count=0;
   $classid=$_SESSION["classid"];
   ?>

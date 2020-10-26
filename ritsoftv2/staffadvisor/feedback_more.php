@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 	$i=1;
 $hodid=$_SESSION['fid'];
 //...........select department of login hod

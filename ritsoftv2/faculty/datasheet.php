@@ -1,6 +1,6 @@
 <?php
 include("includes/header.php");
-include("includes/connection.php");
+include("../connection.php");
 
 $f=$_SESSION['fid'];
 //$utype=$_SESSION['utype'];
@@ -54,7 +54,7 @@ $fname=$result['name'];
 				<select name="subject" class="form-control" required="required">
 					<option value="">--select--</option>
 					<?php
-//include("includes/connection1.php");
+//include("../connection.mysqli.php");
 //choose subjects for login faculty
 					$sql=mysql_query("select subjectid,subject_title from subject_class where subjectid in(select subjectid from subject_allocation where fid='$f' and classid in(select classid from class_details where active='YES'))",$con);
 					while ($result=mysql_fetch_array($sql)){

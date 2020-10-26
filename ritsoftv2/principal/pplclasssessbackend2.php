@@ -2,7 +2,7 @@
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 //$link = mysql_connect("localhost", "root", "", "rit");
-include("includes/connection.php");
+include("../connection.php");
 
 
 //..............................................................................

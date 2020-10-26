@@ -21,7 +21,7 @@
 </script>
 
 <?php
-include_once("includes/connection.php");
+include_once("../connection.php");
 
 if(isset($_POST['bulk'])){
 	if($_POST['bulk'] == true){

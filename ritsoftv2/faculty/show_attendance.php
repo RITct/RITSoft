@@ -1,7 +1,7 @@
     <?php
      // session_start();
 //$con=mysqli_connect("localhost","root","","ritsoft");
-    include("includes/connection1.php");
+    include("../connection.mysqli.php");
   
     $uname=$_SESSION['fid'];
     if(strlen($_REQUEST['class'])>1 && strlen($_REQUEST["date"])>1)

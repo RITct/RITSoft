@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
  //session_start();
-include("includes/connection.php");
+include("../connection.php");
 
 $f=$_SESSION['fid'];
 include("includes/sidenav.php");

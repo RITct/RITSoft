@@ -11,7 +11,7 @@ include("includes/header.php");
 
 <?php
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 $count=0;
 $classid=$_SESSION["classid"];
 //fetching classid of next semester based on current semester

@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 include("includes/sidenav.php");
-include("includes/connection3.php");
+include("../connection.mysqli.php");
 $classid= NULL;
 //session_start();
 $st=$_SESSION['fid'];

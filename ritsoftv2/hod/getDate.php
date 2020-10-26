@@ -6,7 +6,7 @@ session_start();
  * @Last Modified by:   indran
  * @Last Modified time: 2018-08-11 18:40:46
  */
-include("includes/connection.php"); 
+include("../connection.mysqli.php");
 //$con=mysqli_connect("localhost","root","","ritsoft");
 date_default_timezone_set('Asia/Kolkata'); 
 $idd=explode(",",$_REQUEST['id']);

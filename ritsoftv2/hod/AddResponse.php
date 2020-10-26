@@ -1,6 +1,6 @@
 <?php
 include("includes/header.php");
-  include("includes/connection1.php");
+  include("../connection.php");
   include("includes/sidenav.php");
 ?>
 <script type="text/javascript">

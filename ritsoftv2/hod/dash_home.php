@@ -1,6 +1,6 @@
 <?php
 include("includes/header.php");
-    include("includes/connection1.php");
+    include("../connection.php");
     include("includes/sidenav.php");
     //faculty id from session
 //READING FACULTY NAME AND DEPARTMENT

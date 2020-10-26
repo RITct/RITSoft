@@ -15,7 +15,7 @@ function getfac(a)
 
 <?php
 include("includes/sidenav.php");
-include("includes/connection.php");
+include("../connection.php");
 $stid=$_SESSION['admissionno'];
 //........select login student name
 $s1=mysql_query("select name from stud_details where admissionno='$stid'",$con);

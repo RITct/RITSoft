@@ -3,7 +3,7 @@ include("includes/header.php");
 include("includes/sidenav.php");
 
 $classid=$_SESSION["classid"];
-include("includes/connection3.php");
+include("../connection.mysqli.php");
 //session_start();
 $st=$_SESSION['fid'];
 //echo $st;

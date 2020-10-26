@@ -1,5 +1,5 @@
 <?php
-include("includes/connection.php");
+include("../connection.php");
 $stud_id = $_GET['id']; 
 $id2 = $_GET['id2']; 
 

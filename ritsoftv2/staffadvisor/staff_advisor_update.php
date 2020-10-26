@@ -1,6 +1,6 @@
 <?php
 //$con=mysqli_connect("localhost","root","","ritsoft");
-include("includes/connection3.php");
+include("../connection.mysqli.php");
 include("includes/header.php");
 include("includes/sidenav.php");
 $classid=$_SESSION["classid"];

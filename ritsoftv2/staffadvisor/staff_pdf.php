@@ -7,7 +7,7 @@ $classid1=$_GET['classid1'];
 
 
 require('pdf/pdfSample.php');
-include("includes/connection.php");
+include("../connection.php");
 //$pdf = new PDF('P','mm',array(250,400));
 //$pdf = new PDF('P','mm',array(500,400));
 $pdf = new PDF('P','mm',array(410,400));

@@ -3,7 +3,7 @@
 include("includes/header.php");
 include("includes/sidenav.php");
 include "includes/dboperation.php";
-//include("includes/connection.php");
+//include("../connection.php");
 $adm_no=$_GET["admission"];
 ?>
        

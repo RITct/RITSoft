@@ -1,5 +1,5 @@
  <?php 
-	include("includes/connection.php");
+	include("../connection.php");
 ?>
 <?php
 if (isset($_POST["classid"]) && isset($_POST["status"])) {

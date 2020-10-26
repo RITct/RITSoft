@@ -1,6 +1,6 @@
 <?php
 include("includes/header.php");
-include("includes/connection.php");
+include("../connection.mysqli.php");
 include("includes/sidenav.php");
 //$pid=$_SESSION["parentid"]; //parent id from session
 ?>
