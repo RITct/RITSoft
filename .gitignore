@@ -168,7 +168,6 @@ Sessionx.vim
 
 # Temporary
 .netrwhist
-*~
 # Auto-generated tag files
 tags
 # Persistent undo
@@ -176,7 +175,6 @@ tags
 
 ##### Emacs
 # -*- mode: gitignore; -*-
-*~
 \#*\#
 /.emacs.desktop
 /.emacs.desktop.lock
@@ -257,10 +255,6 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
-##### Notepad++
-# Notepad++ backups #
-*.bak
-
 ##### TextMate
 *.tmproj
 *.tmproject
@@ -283,7 +277,6 @@ tmtags
 **/nbproject/Package-*.bash
 build/
 nbbuild/
-dist/
 nbdist/
 .nb-gradle/
 
@@ -364,8 +357,6 @@ fabric.properties
 .metadata
 bin/
 tmp/
-*.tmp
-*.bak
 *.swp
 *~.nib
 local.properties
@@ -475,3 +466,5 @@ composer.lock
 *.css.map
 *.sass.map
 *.scss.map
+
+docker/data
