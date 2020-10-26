@@ -32,12 +32,20 @@
 
   You can see the website at [localhost](http://localhost)
 
-  Use the same command to reload the server after you have made changes.
+  Use the same command to reload the server after you have made changes to the docker-compose.yml.
+
+  If you changed Dockerfile do
+
+  ```bash
+  docker-compose up -d --build
+  ```
+
+  to rebuild the image.
 
 - To stop the server
 
   ```bash
-  docker-compose stop
+  docker-compose down
   ```
 
 ## Database details
