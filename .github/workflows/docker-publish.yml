@@ -17,7 +17,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
+        with:
+          submodules: true
+          recursive: true
       - name: Run tests
         run: docker build . --file Dockerfile.github
   push:
@@ -29,6 +31,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: true
+          recursive: true
 
       - name: Build image
         run: docker build . --file Dockerfile.github --tag $IMAGE_NAME
