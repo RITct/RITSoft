@@ -2,22 +2,18 @@ name: Docker
 
 on:
   push:
-    # Publish `master` as Docker `latest` image in github packages.
     branches:
       - master
-    # Publish `v1.2.3` tags as releases.
     tags:
       - v*
 
 env:
-  # TODO: Change variable to your image's name.
   IMAGE_NAME: ritsoft
 
 jobs:
-  # Run tests.
-  # See also https://docs.docker.com/docker-hub/builds/automated-testing/
   test:
     runs-on: ubuntu-latest
+    if: github.repository == ‘RITct/RITSoft’
 
     steps:
       - uses: actions/checkout@v2
