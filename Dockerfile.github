@@ -1,0 +1,3 @@
+FROM php:5.4-apache
+RUN docker-php-ext-install mysql
+COPY ritsoftv2/ /var/www/html/
