@@ -1,0 +1,3 @@
+[submodule "ritsoftv2/PHP-Slim-Restful"]
+	path = ritsoftv2/PHP-Slim-Restful
+	url = https://github.com/srinivastamada/PHP-Slim-Restful
