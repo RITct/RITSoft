@@ -13,7 +13,7 @@ env:
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: github.repository == "RITct/RITSoft"
+    if: github.repository == 'RITct/RITSoft'
 
     steps:
       - uses: actions/checkout@v2
